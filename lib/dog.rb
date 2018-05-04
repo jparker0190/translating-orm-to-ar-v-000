@@ -1,6 +1,4 @@
 class Dog < ActiveRecord::Base
   attr_accessor :name, :breed
-  def self.update
-      self.update
-  end
+  self.find_by_name = Dog.find_by(name:)
 end
